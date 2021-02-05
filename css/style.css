@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --navbar-height: 59px;
+}
+
+
+
+#home::before {
+  content: "";
+  background: url("../imgs/bg.jpg") no-repeat center center/cover;
+  filter: blur(10px);
+  height: 740px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.88;
+  transform: scale(1.1);
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 150px;
+  height: 740px;
+  justify-content: center;
+  align-items: right;
+}
+
+#home h1 {
+  color: white;
+  text-align: right;
+  font-size: 5rem;
+  font-family: monospace;
+  cursor: pointer;
+  
+  
+}
+
+
+#h_about:after{
+  content:'Hello'
+}
+#h_about:hover::after{
+  content: 'About';
+  color: rgb(226, 71, 71);
+  text-shadow: 2px 2px white;
+  transition: 0.7s;
+}
+#h_project:after{
+  content:'This is'
+}
+#h_project:hover::after{
+  content: 'Project';
+  color: rgb(255, 251, 0);
+  text-shadow: 2px 2px white;
+  transition: 0.7s;
+}
+#h_contact:after{
+  content:'Shubhranshu Shivam'
+}
+#h_contact:hover::after{
+  content: 'Contact';
+  color: rgb(18, 221, 236);
+  text-shadow: 2px 2px white;
+  transition: 0.7s;
+}
+
+#home a{
+  text-decoration: none;
+}
+
+footer {
+  background: black;
+  text-align: center;
+  color: white;
+  height: 22px;
+}
